@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beach</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush&display=swap" rel="stylesheet">
+    <style>
+        header
+        {
+            padding: 30px;
+            text-align: center;
+            background: rgb(212, 186, 240);
+            width: 100%;
+            height: 50%;
+            margin-left: -50px;
+            margin-top: -20px;
+        }
+        h1.judul 
+        {
+            font-family: 'Amatic SC', cursive;
+            color: white;
+            font-size: 40pt;
+            border-style: solid;
+            border-color: white;
+            padding: 15px;
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+        ul 
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(90, 60, 99, 0.863);
+        }
+        li 
+        {
+            float: left;
+        }
+        li a 
+        {
+            display: block;
+            color: white;
+            font-family: 'Caveat Brush', cursive;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 16pt;
+        }
+        li a:hover
+        {
+            background-color: black;
+        }
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        h2,p,img
+        {
+            text-align: center;
+        }
+        h2
+        {
+            font-family: 'Amatic SC', cursive;
+            font-size: 30pt;
+        }
+        p
+        {
+            margin-left: 30%;
+            margin-right: 30%;
+            align: justify;
+        }
+        img
+        {
+            width: 350px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .column {
+            float: left;
+            width: min-content;
+            overflow: visible;
+            position: relative;
+            width: 30%;
+            padding: 12px;
+            display: inline-block;
+            margin-right: auto;
+            margin-left: 15px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: left;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .footer
+        {
+            background: #896ca3;
+            color: #f9f9f9;
+            height: 200px;
+            position: relative;
+            bottom: -8px;
+            margin-left: -8px;
+            display: block;
+            width: 101.1%;
+            top: 80px;
+        }
+        
+        .footer .footer-bottom
+        {
+            background: #75558f;
+            color: #f9f9f9;
+            height: 25px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+
+        table
+        {
+            list-style-type: none;
+            border-style: solid;
+            border-color: white;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: rgba(229, 201, 233, 0.644);
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: left;
+            height: 100px;
+        }
+        td.f 
+        {
+            border-style: solid;
+            border-color: white;
+        }
+
+        img.logo 
+        {
+            width: 35px;
+            height: 55px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: rgb(250, 241, 250);">
+    <header><h1 class="judul">EXPLORE INDONESIA</h1></header>
+    <ul>
+        <li><a href="web.html" target="_self">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+            <a href="#typeoftrip" class="dropbtn">Type of trip</a>
+            <div class="dropdown-content">
+                <a href="dua.html">Mountain</a>
+                <a href="tiga.html">Beach</a>
+                <a href="empat.html">Land and Air</a>
+            </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#saran">Saran & Tanggapan</a></li>
+    </ul>
+
+    <br>
+
+    <h2>Pink Beach</h2>
+    <div class="row">
+        <div class="column">
+            <img src="pinkk.jpg" alt="Pink Beach">
+        </div>
+                
+        <div class="column">
+            <img src="header.jpg" alt="Pink Beach">
+        </div>
+                
+        <div class="column">
+            <img src="pasirpink.jpg" alt="Pink Beach">
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th><img class="logo" src="loc.png" alt="loc"></th>
+            <td style="width: 22%;"> 1. Pulau Lombok terletak di desa Sekaroh, Jerowaru, Kabupaten Lombok Timur, Nusa Tenggara Barat. <br>
+                2. Taman Nasional Komodo, Nusa Tenggara Barat 
+            </td>
+            <td class="f">Pantai Pink tidak hanya menyuguhkan panorama pantai yang indah saja, namun kawasan 
+                wisata alam ini juga memiliki kekayaan dan keindahan pemandangan bawah laut yang menarik untuk 
+                diselami. Taman di bawah air laut kawasan wisata ini menjadi rumah dari berbagai jenis ikan, terumbu 
+                karang dan juga berbagai jenis biota yang lain. Oleh karena itu, diving atau snorkeling di pantai ini 
+                menjadi salah satu aktivitas yang sayang untuk dilewatkan. Saat pasir tersapu oleh deburan ombak maka 
+                warna pink yang sangat lembut menjadi nampak jelas. Beberapa pendapat menyatakan bahwa warna merah muda 
+                tersebut berasal dari pecahan karang merah dan sudah mati yang memang banyak ditemukan di kawasan wisata 
+                ini. Pemandangan matahari terbenam disini juga cukup fenomenal. Banyak pengunjung yang rela menunggu senja 
+                tiba demi menyaksikan keindahan pemandangan sunset yang terkenal menakjubkan.
+            </td>
+        </tr>
+    </table>
+            
+    <br>
+
+    <h2>The Anmon Resort Bintan</h2>
+    <div class="row">
+        <div class="column">
+            <img src="kepri1.jpg" alt="The Anmon">
+        </div>
+                
+        <div class="column">
+            <img src="kepri2.jpg" alt="The Anmon">
+        </div>
+                
+        <div class="column">
+            <img src="kepri3.jpg" alt="The Anmon">
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th><img class="logo" src="loc.png" alt="loc"></th>
+            <td style="width: 23%;">Kawasan Pariwisata Jalan Raja Haji Fisabililah No.88, Sebong Lagoi, Tlk. Sebong, Kabupaten Bintan, Kepulauan Riau</td>
+            <td class="f">The Anmon Resort Bintan baru dibuka pada April 2019 lalu sehingga masih banyak yang belum tahu mengenai tempat ini, 
+                berada di dekat Treasure Bay Waterfront, dimana merupakan Waterfront terbesar se-Asia Tenggara. Memiliki konsep 
+                yang unik dan nyaman sehingga membuat para wisatawan betah berlama-lama disana. Banyak turis-turis dari luar 
+                negri juga yang kesana, terlebih masyarakat Singapore yang berjarak dekat dari negara mereka. Kita dapat memainkan berbagai 
+                permainan air disini dan jika ingin menikmati keindahan tempat atau hanya sekedar bersantai sembari menjernihkan
+                fikiran kita dapat bersantai di kursi pantai yang banyak disediakan disini. Tidak hanya pantainya saja, disini terdapat
+                hutan Mangrove juga yang dapat kita nikmati dengan menggunakan ATV.
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Selayar Island</h2>
+    <div class="row">
+        <div class="column">
+            <img src="sel1.jpg" alt="view">
+        </div>
+                
+        <div class="column">
+            <img src="sel.jpg" alt="view">
+        </div>
+                
+        <div class="column">
+            <img src="sel2.jpg" alt="view">
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th><img class="logo" src="loc.png" alt="loc"></th>
+            <td style="width: 23%;">Pulau Selayar terletak di Kabupaten Kepulauan Selayar, Sulawesi Selatan</td>
+            <td class="f">Deretan pantai berpasir putih, air laut jernih, dan panorama alam bawah laut yang 
+                mengagumkan siap memanjakanmu. Kekhasan pulau ini antara lain menyimpan berbagai macam fauna 
+                endemik dan menarik seperti Tarsius tarsier. Hewan ini memiliki tubuh berwarna coklat kemerahan 
+                dengan warna kulit kelabu, bermata besar dengan telinga menghadap ke depan dan memiliki bentuk 
+                yang lebar. Ibaratnya, berwisata ke Kepulauan Selayar layaknya berwisata di pulau pribadi 
+                karena belum banyak turis yang datang.
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    
+    <div class="footer">
+        <div class="row">
+            <div class="column"> <div id="about"></div>
+                <br>
+                <b>About us</b>  <br>
+                Someone who want to explore Indonesia <br> 
+                and show the hidden gem in Indonesia. <br>
+                There are many beautiful place in Indonesia.
+            </div>
+
+            <div class="column"> <div id="Contact"></div>
+                <br>
+                <b>Contact : </b> <br>
+                fidyahputri15@gmail.com <br>
+                (0711) 310004
+            </div>
+
+            <div class="column">
+                <div id="saran">
+                    <br>
+                    <b>Saran dan Tanggapan</b>  <br>
+                    <textarea name="saran" id="saran" cols="28" rows="4"></textarea>
+                    <button type="submit">Kirim!</button>                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2020 | Designed by Fidyah Putri R
+        </div>
+    </div>
+</body>
+</html>
